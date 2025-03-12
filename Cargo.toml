@@ -1,0 +1,10 @@
+[package]
+name = "catflip"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+assert_cmd = "2.0.16"
+clap = { version = "4.5.32", features = ["derive"] }
+dotenvy = "0.15.7"
+predicates = "3.1.3"
