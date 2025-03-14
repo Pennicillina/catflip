@@ -1,6 +1,6 @@
-use std::process::Command;
 use assert_cmd::prelude::*;
 use predicates::prelude::*;
+use std::process::Command;
 
 #[test]
 fn run_with_defaults() {
@@ -13,8 +13,7 @@ fn run_with_defaults() {
 
 #[test]
 fn run_with_message() {
-    let mut cmd = Command::cargo_bin("catflip")
-        .expect("error: binary not found");
+    let mut cmd = Command::cargo_bin("catflip").expect("error: binary not found");
     cmd.arg("5508");
 
     cmd.assert()
